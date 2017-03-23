@@ -1,3 +1,14 @@
+```java
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        int[] a = {R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5};
+        for (int i = 0; i < a.length; i++) {
+            findViewById(a[i]).setOnClickListener(this);
+        }
+    }
+```
 标题1
 =
 标题2
